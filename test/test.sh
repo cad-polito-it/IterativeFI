@@ -1,13 +1,34 @@
 #!/usr/bin/env bash
 
-# python one_step_fi.py -data cifar10 -root ../data -net cifar10_resnet20 -weights_path ./networks/weights/best_cifar_resnet20.pt -results_path ./results -e_goal 0.01 -conf 0.99
-# python one_step_fi.py -data cifar10 -root ../data -net cifar10_mobilenetv2 -weights_path ./networks/weights/best_cifar_mobilenetv2.pt -results_path ./results -e_goal 0.01 -conf 0.99
+WEIGHTS_PATH="./networks/weights/best_mnist_cnn.pt"
 
-# python iterative_fi.py -data cifar10 -root ../data -net cifar10_resnet20 -weights_path ./networks/weights/best_cifar_resnet20.pt -results_path ./results -e_start 0.05 -e_goal 0.01 -conf 0.99
-# python iterative_fi.py -data cifar10 -root ../data -net cifar10_mobilenetv2 -weights_path ./networks/weights/best_cifar_mobilenetv2.pt -results_path ./results -e_start 0.05 -e_goal 0.01 -conf 0.99
+mapfile -t LAYER_NAMES < <(python3 ./utils/extract_layers.py -weights_path $WEIGHTS_PATH)
 
-python one_step_fi.py -data cifar10 -root ../data -net cifar10_resnet20 -weights_path ./networks/weights/best_cifar_resnet20.pt -results_path ./results -e_goal 0.01 -conf 0.99
-python one_step_fi.py -data cifar10 -root ../data -net cifar10_mobilenetv2 -weights_path ./networks/weights/best_cifar_mobilenetv2.pt -results_path ./results -e_goal 0.01 -conf 0.99
+for i in 0.01 0.001 0.0001
+do
+    python one_step_fi.py -data mnist -root ../data -net mnist_cnn -weights_path ./networks/weights/best_mnist_cnn.pt -results_path ./results -e_goal $i -conf 0.99
+    python iterative_fi.py -data mnist -root ../data -net mnist_cnn -weights_path ./networks/weights/best_mnist_cnn.pt -results_path ./results -e_start 0.05 -e_goal $i -conf 0.99
+    
+    for layer in "${LAYER_NAMES[@]}"; do
+        echo "$layer"
+        python one_step_fi.py -data mnist -root ../data -net mnist_cnn -weights_path ./networks/weights/best_mnist_cnn.pt -results_path ./results -e_goal $i -conf 0.99 -layer_name $layer
+        python iterative_fi.py -data mnist -root ../data -net mnist_cnn -weights_path ./networks/weights/best_mnist_cnn.pt -results_path ./results -e_start 0.05 -e_goal $i -conf 0.99 -layer_name $layer
+    done    
+done
 
-python iterative_fi.py -data cifar10 -root ../data -net cifar10_resnet20 -weights_path ./networks/weights/best_cifar_resnet20.pt -results_path ./results -e_start 0.05 -e_goal 0.01 -conf 0.99
-python iterative_fi.py -data cifar10 -root ../data -net cifar10_mobilenetv2 -weights_path ./networks/weights/best_cifar_mobilenetv2.pt -results_path ./results -e_start 0.05 -e_goal 0.01 -conf 0.99
+
+# WEIGHTS_PATH="./networks/weights/best_banknote_mlp.pt"
+
+# mapfile -t LAYER_NAMES < <(python3 ./utils/extract_layers.py -weights_path $WEIGHTS_PATH)
+
+# for i in 0.01 0.001 0.0001
+# do
+#     python one_step_fi.py -data banknote -root ../data -net banknote_mlp -weights_path ./networks/weights/best_banknote_mlp.pt -results_path ./results -e_goal $i -conf 0.99
+#     python iterative_fi.py -data banknote -root ../data -net banknote_mlp -weights_path ./networks/weights/best_banknote_mlp.pt -results_path ./results -e_start 0.05 -e_goal $i -conf 0.99
+    
+#     for layer in "${LAYER_NAMES[@]}"; do
+#         echo "$layer"
+#         python one_step_fi.py -data banknote -root ../data -net banknote_mlp -weights_path ./networks/weights/best_banknote_mlp.pt -results_path ./results -e_goal $i -conf 0.99 -layer_name $layer
+#         python iterative_fi.py -data banknote -root ../data -net banknote_mlp -weights_path ./networks/weights/best_banknote_mlp.pt -results_path ./results -e_start 0.05 -e_goal $i -conf 0.99 -layer_name $layer
+#     done    
+# done
