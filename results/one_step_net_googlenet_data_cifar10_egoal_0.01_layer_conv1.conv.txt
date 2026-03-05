@@ -1,0 +1,115 @@
+[PROP/wald] K=1  FRcrit_avg=0.03294775  conf=0.99  n=15082
+half_norm=0.00356991  e_goal=0.01000000  FPC=on  DESIGN=WOR  N_pop=165888
+EP_control=wald  E_wald_final=0.00356991
+Wald_CI(99%):   [0.02937784, 0.03651766]   half=0.00356991   se=0.00138583   FPC=on
+SampleStdDev_FRcrit_across_injections: s=0.14898654 (n=15082)
+injections_used=15082  pilot=15082
+baseline_pred_dist=[0.06640625, 0.14453125, 0.08984375, 0.10546875, 0.078125, 0.0859375, 0.12890625, 0.09765625, 0.0859375, 0.1171875]
+global_summary_over_injections: fault_pred_dist = [0.06762458974273969, 0.14515906792865668, 0.11001447296446094, 0.10280622182071343, 0.07906983490253282, 0.0842780819022676, 0.1252654758155417, 0.09160469640962737, 0.08350341052247713, 0.11067414799098263] Δmax = 0.020 KL = 0.003 TV = 0.023 H_baseline = 2.277 H_global = 2.278 ΔH = -0.001 BER = 0.0326 per_class = [0.029134847149309265, 0.0235523283527527, 0.010225261325046269, 0.0295201049079845, 0.028795915661052912, 0.029143711347663078, 0.02892470655366823, 0.06207929982760907, 0.028902605152439392, 0.05587455244662511] agree = 0.967 flip_asym = 0.928
+
+[E_seq] n, E_wald
+15082,0.00356991
+
+[E_final] E_wald=0.00356991
+
+Top-100 worst injections
+  1) Inj  14684 | FRcrit=0.933594 | maj=2@0.88 Δmax=0.789 KL=1.983 | conv1.conv [139, 2, 1, 2] bit 30
+  2) Inj   5881 | FRcrit=0.933594 | maj=2@0.93 Δmax=0.836 KL=2.110 | conv1.conv [66, 0, 2, 2] bit 30
+  3) Inj   1213 | FRcrit=0.933594 | maj=2@0.92 Δmax=0.828 KL=2.073 | conv1.conv [173, 1, 2, 1] bit 30
+  4) Inj  12754 | FRcrit=0.929688 | maj=2@0.86 Δmax=0.773 KL=1.946 | conv1.conv [75, 0, 0, 2] bit 30
+  5) Inj  11975 | FRcrit=0.929688 | maj=2@0.84 Δmax=0.754 KL=1.983 | conv1.conv [20, 1, 0, 1] bit 30
+  6) Inj   4289 | FRcrit=0.925781 | maj=2@0.92 Δmax=0.832 KL=2.084 | conv1.conv [66, 1, 2, 2] bit 30
+  7) Inj    141 | FRcrit=0.925781 | maj=2@0.92 Δmax=0.828 KL=2.087 | conv1.conv [151, 0, 1, 2] bit 30
+  8) Inj  13548 | FRcrit=0.925781 | maj=2@0.96 Δmax=0.875 KL=2.241 | conv1.conv [36, 0, 1, 0] bit 30
+  9) Inj    406 | FRcrit=0.925781 | maj=2@0.91 Δmax=0.816 KL=2.039 | conv1.conv [151, 1, 1, 1] bit 30
+ 10) Inj  14152 | FRcrit=0.925781 | maj=2@0.70 Δmax=0.613 KL=1.815 | conv1.conv [23, 0, 1, 0] bit 30
+ 11) Inj  12328 | FRcrit=0.925781 | maj=2@0.96 Δmax=0.867 KL=2.212 | conv1.conv [8, 0, 1, 0] bit 30
+ 12) Inj  10832 | FRcrit=0.925781 | maj=2@0.76 Δmax=0.668 KL=1.867 | conv1.conv [25, 1, 2, 2] bit 30
+ 13) Inj  14140 | FRcrit=0.925781 | maj=2@0.95 Δmax=0.863 KL=2.198 | conv1.conv [12, 0, 1, 2] bit 30
+ 14) Inj   2592 | FRcrit=0.925781 | maj=2@0.89 Δmax=0.805 KL=2.023 | conv1.conv [66, 0, 1, 2] bit 30
+ 15) Inj   5135 | FRcrit=0.925781 | maj=2@0.82 Δmax=0.730 KL=1.947 | conv1.conv [20, 1, 0, 2] bit 30
+ 16) Inj  11939 | FRcrit=0.921875 | maj=2@0.97 Δmax=0.883 KL=2.286 | conv1.conv [62, 2, 2, 0] bit 30
+ 17) Inj   9959 | FRcrit=0.921875 | maj=2@0.86 Δmax=0.773 KL=1.946 | conv1.conv [67, 0, 0, 0] bit 30
+ 18) Inj   8062 | FRcrit=0.921875 | maj=2@0.93 Δmax=0.836 KL=2.110 | conv1.conv [8, 0, 0, 1] bit 30
+ 19) Inj   6058 | FRcrit=0.921875 | maj=2@0.95 Δmax=0.855 KL=2.200 | conv1.conv [119, 1, 1, 0] bit 30
+ 20) Inj  11175 | FRcrit=0.921875 | maj=2@0.89 Δmax=0.805 KL=1.979 | conv1.conv [174, 0, 2, 2] bit 30
+ 21) Inj   8879 | FRcrit=0.921875 | maj=2@0.91 Δmax=0.816 KL=2.103 | conv1.conv [57, 1, 1, 2] bit 30
+ 22) Inj    175 | FRcrit=0.921875 | maj=2@0.89 Δmax=0.797 KL=2.003 | conv1.conv [138, 0, 2, 0] bit 30
+ 23) Inj  10969 | FRcrit=0.921875 | maj=2@0.94 Δmax=0.852 KL=2.146 | conv1.conv [127, 1, 2, 1] bit 30
+ 24) Inj   5116 | FRcrit=0.921875 | maj=2@0.97 Δmax=0.879 KL=2.272 | conv1.conv [89, 1, 0, 1] bit 30
+ 25) Inj  10162 | FRcrit=0.921875 | maj=2@0.63 Δmax=0.543 KL=1.519 | conv1.conv [41, 1, 1, 1] bit 30
+ 26) Inj    456 | FRcrit=0.921875 | maj=2@0.88 Δmax=0.793 KL=1.977 | conv1.conv [134, 1, 0, 0] bit 30
+ 27) Inj   5645 | FRcrit=0.917969 | maj=2@0.88 Δmax=0.789 KL=2.046 | conv1.conv [87, 0, 2, 0] bit 30
+ 28) Inj   1880 | FRcrit=0.917969 | maj=2@0.98 Δmax=0.891 KL=2.304 | conv1.conv [73, 0, 0, 1] bit 30
+ 29) Inj   3211 | FRcrit=0.917969 | maj=2@0.96 Δmax=0.875 KL=2.227 | conv1.conv [174, 1, 0, 0] bit 30
+ 30) Inj   6036 | FRcrit=0.917969 | maj=2@0.91 Δmax=0.816 KL=2.103 | conv1.conv [57, 2, 1, 2] bit 30
+ 31) Inj  10072 | FRcrit=0.917969 | maj=2@0.57 Δmax=0.477 KL=1.441 | conv1.conv [135, 1, 2, 1] bit 30
+ 32) Inj  14750 | FRcrit=0.917969 | maj=2@0.86 Δmax=0.766 KL=1.928 | conv1.conv [1, 2, 2, 2] bit 30
+ 33) Inj   2355 | FRcrit=0.917969 | maj=2@0.80 Δmax=0.707 KL=1.893 | conv1.conv [52, 1, 0, 1] bit 30
+ 34) Inj    865 | FRcrit=0.917969 | maj=2@0.77 Δmax=0.684 KL=1.748 | conv1.conv [69, 1, 2, 0] bit 30
+ 35) Inj   7098 | FRcrit=0.917969 | maj=2@0.95 Δmax=0.855 KL=2.200 | conv1.conv [119, 0, 0, 0] bit 30
+ 36) Inj  12043 | FRcrit=0.917969 | maj=2@0.87 Δmax=0.781 KL=1.948 | conv1.conv [138, 0, 1, 0] bit 30
+ 37) Inj   8719 | FRcrit=0.917969 | maj=2@0.98 Δmax=0.887 KL=2.278 | conv1.conv [14, 1, 2, 0] bit 30
+ 38) Inj  13571 | FRcrit=0.917969 | maj=2@0.68 Δmax=0.590 KL=1.610 | conv1.conv [15, 1, 0, 2] bit 30
+ 39) Inj    685 | FRcrit=0.917969 | maj=2@0.95 Δmax=0.859 KL=2.211 | conv1.conv [62, 2, 2, 1] bit 30
+ 40) Inj   3970 | FRcrit=0.914062 | maj=2@0.96 Δmax=0.871 KL=2.246 | conv1.conv [89, 2, 2, 0] bit 30
+ 41) Inj   1812 | FRcrit=0.914062 | maj=2@0.89 Δmax=0.805 KL=1.993 | conv1.conv [191, 1, 1, 0] bit 30
+ 42) Inj   4537 | FRcrit=0.914062 | maj=2@0.98 Δmax=0.887 KL=2.278 | conv1.conv [49, 1, 0, 0] bit 30
+ 43) Inj   3543 | FRcrit=0.914062 | maj=2@0.99 Δmax=0.898 KL=2.340 | conv1.conv [112, 0, 1, 2] bit 30
+ 44) Inj   1514 | FRcrit=0.914062 | maj=2@0.97 Δmax=0.883 KL=2.261 | conv1.conv [36, 1, 2, 2] bit 30
+ 45) Inj   4161 | FRcrit=0.914062 | maj=2@0.96 Δmax=0.875 KL=2.231 | conv1.conv [60, 2, 2, 2] bit 30
+ 46) Inj   3405 | FRcrit=0.914062 | maj=2@0.94 Δmax=0.852 KL=2.159 | conv1.conv [0, 2, 2, 1] bit 30
+ 47) Inj   1640 | FRcrit=0.914062 | maj=2@0.96 Δmax=0.875 KL=2.230 | conv1.conv [60, 1, 0, 2] bit 30
+ 48) Inj  11997 | FRcrit=0.914062 | maj=2@0.98 Δmax=0.891 KL=2.296 | conv1.conv [79, 1, 0, 0] bit 30
+ 49) Inj   3303 | FRcrit=0.914062 | maj=2@0.62 Δmax=0.531 KL=1.526 | conv1.conv [137, 1, 1, 1] bit 30
+ 50) Inj   7903 | FRcrit=0.914062 | maj=2@0.99 Δmax=0.898 KL=2.340 | conv1.conv [118, 0, 2, 1] bit 30
+ 51) Inj   7916 | FRcrit=0.914062 | maj=2@0.97 Δmax=0.879 KL=2.245 | conv1.conv [14, 1, 2, 1] bit 30
+ 52) Inj   7359 | FRcrit=0.914062 | maj=2@0.90 Δmax=0.812 KL=2.043 | conv1.conv [139, 1, 1, 2] bit 30
+ 53) Inj  11485 | FRcrit=0.914062 | maj=2@0.99 Δmax=0.898 KL=2.346 | conv1.conv [1, 0, 2, 2] bit 30
+ 54) Inj    850 | FRcrit=0.914062 | maj=2@0.98 Δmax=0.895 KL=2.322 | conv1.conv [88, 0, 1, 1] bit 30
+ 55) Inj   6679 | FRcrit=0.914062 | maj=2@1.00 Δmax=0.906 KL=2.382 | conv1.conv [118, 0, 2, 2] bit 30
+ 56) Inj   8489 | FRcrit=0.914062 | maj=2@0.86 Δmax=0.766 KL=1.928 | conv1.conv [138, 0, 0, 1] bit 30
+ 57) Inj   2885 | FRcrit=0.914062 | maj=2@0.59 Δmax=0.496 KL=1.492 | conv1.conv [150, 1, 1, 0] bit 30
+ 58) Inj   7017 | FRcrit=0.914062 | maj=2@1.00 Δmax=0.906 KL=2.382 | conv1.conv [102, 0, 2, 0] bit 30
+ 59) Inj  12844 | FRcrit=0.914062 | maj=2@0.76 Δmax=0.668 KL=1.692 | conv1.conv [94, 1, 2, 2] bit 30
+ 60) Inj   4858 | FRcrit=0.914062 | maj=2@0.53 Δmax=0.441 KL=1.496 | conv1.conv [189, 1, 2, 2] bit 30
+ 61) Inj   8535 | FRcrit=0.914062 | maj=2@0.96 Δmax=0.875 KL=2.231 | conv1.conv [60, 2, 0, 0] bit 30
+ 62) Inj  14690 | FRcrit=0.914062 | maj=2@0.98 Δmax=0.895 KL=2.315 | conv1.conv [79, 2, 1, 1] bit 30
+ 63) Inj   1555 | FRcrit=0.914062 | maj=2@0.99 Δmax=0.898 KL=2.346 | conv1.conv [1, 1, 0, 1] bit 30
+ 64) Inj  12323 | FRcrit=0.914062 | maj=2@0.57 Δmax=0.484 KL=1.504 | conv1.conv [122, 1, 2, 1] bit 30
+ 65) Inj   7977 | FRcrit=0.914062 | maj=2@0.99 Δmax=0.898 KL=2.340 | conv1.conv [155, 0, 2, 0] bit 30
+ 66) Inj   1718 | FRcrit=0.914062 | maj=2@0.96 Δmax=0.875 KL=2.231 | conv1.conv [14, 2, 0, 0] bit 30
+ 67) Inj  14164 | FRcrit=0.914062 | maj=2@0.98 Δmax=0.887 KL=2.300 | conv1.conv [133, 0, 0, 1] bit 30
+ 68) Inj  11729 | FRcrit=0.914062 | maj=2@0.92 Δmax=0.832 KL=2.084 | conv1.conv [76, 1, 0, 1] bit 30
+ 69) Inj  10536 | FRcrit=0.914062 | maj=2@0.88 Δmax=0.793 KL=1.977 | conv1.conv [67, 1, 1, 0] bit 30
+ 70) Inj   9670 | FRcrit=0.914062 | maj=2@0.95 Δmax=0.859 KL=2.185 | conv1.conv [12, 0, 2, 1] bit 30
+ 71) Inj  13201 | FRcrit=0.914062 | maj=2@0.99 Δmax=0.898 KL=2.340 | conv1.conv [49, 0, 2, 2] bit 30
+ 72) Inj   4569 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [24, 0, 1, 0] bit 30
+ 73) Inj   4600 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [18, 0, 2, 0] bit 30
+ 74) Inj   4733 | FRcrit=0.910156 | maj=2@0.88 Δmax=0.789 KL=2.029 | conv1.conv [83, 2, 1, 1] bit 30
+ 75) Inj   5008 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.906 KL=2.382 | conv1.conv [12, 0, 0, 0] bit 30
+ 76) Inj   5646 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [178, 1, 2, 1] bit 30
+ 77) Inj   4853 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [121, 0, 0, 1] bit 30
+ 78) Inj   4792 | FRcrit=0.910156 | maj=2@0.97 Δmax=0.879 KL=2.246 | conv1.conv [7, 2, 0, 0] bit 30
+ 79) Inj   5165 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [54, 0, 0, 2] bit 30
+ 80) Inj   5951 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [65, 0, 2, 0] bit 30
+ 81) Inj   5833 | FRcrit=0.910156 | maj=2@0.99 Δmax=0.898 KL=2.339 | conv1.conv [98, 2, 2, 0] bit 30
+ 82) Inj   5964 | FRcrit=0.910156 | maj=2@0.99 Δmax=0.902 KL=2.357 | conv1.conv [1, 1, 2, 2] bit 30
+ 83) Inj   6651 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [156, 0, 1, 0] bit 30
+ 84) Inj   5287 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [169, 0, 1, 0] bit 30
+ 85) Inj   5226 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [105, 1, 0, 0] bit 30
+ 86) Inj   4882 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [9, 1, 2, 1] bit 30
+ 87) Inj   5187 | FRcrit=0.910156 | maj=2@0.98 Δmax=0.895 KL=2.322 | conv1.conv [109, 0, 0, 2] bit 30
+ 88) Inj   5169 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.906 KL=2.382 | conv1.conv [11, 1, 1, 2] bit 30
+ 89) Inj   7283 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [22, 1, 2, 2] bit 30
+ 90) Inj   6369 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [93, 0, 1, 0] bit 30
+ 91) Inj   6750 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [37, 1, 0, 0] bit 30
+ 92) Inj   7018 | FRcrit=0.910156 | maj=2@0.99 Δmax=0.898 KL=2.334 | conv1.conv [117, 1, 1, 1] bit 30
+ 93) Inj   7341 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [24, 0, 0, 1] bit 30
+ 94) Inj   5935 | FRcrit=0.910156 | maj=2@0.95 Δmax=0.859 KL=2.173 | conv1.conv [127, 2, 1, 1] bit 30
+ 95) Inj   6656 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [121, 2, 1, 1] bit 30
+ 96) Inj   6553 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [43, 2, 0, 2] bit 30
+ 97) Inj   7411 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [48, 1, 1, 2] bit 30
+ 98) Inj   7006 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [172, 0, 2, 1] bit 30
+ 99) Inj   7440 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [84, 0, 1, 2] bit 30
+100) Inj   6902 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | conv1.conv [180, 0, 0, 0] bit 30

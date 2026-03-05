@@ -1,0 +1,118 @@
+[PROP/wald] K=1  FRcrit_avg=0.02100891  conf=0.99  steps=3  n=1372
+half_norm=0.00997378  e_goal=0.01000000  FPC=off  DESIGN=WR  N_pop=393216
+EP_control=wald  E_wald_final=0.00997378
+Wald_CI(99%):   [0.01103512, 0.03098269]   half=0.00997378   se=0.00387181   FPC=off
+SampleStdDev_FRcrit_across_injections: s=0.11062238 (n=1372)
+injections_used=1372  pilot=664  budget_cap=None
+baseline_pred_dist=[0.06640625, 0.14453125, 0.08984375, 0.10546875, 0.078125, 0.0859375, 0.12890625, 0.09765625, 0.0859375, 0.1171875]
+global_summary_over_injections: fault_pred_dist = [0.06853874362244898, 0.1465441645408163, 0.09616151147959184, 0.10411067328717201, 0.08012652605685132, 0.08472462645772595, 0.12683924016034986, 0.09319196428571429, 0.08455949344023324, 0.11520305666909621] Δmax = 0.006 KL = 0.000 TV = 0.012 H_baseline = 2.277 H_global = 2.278 ΔH = -0.001 BER = 0.0208 per_class = [0.016034985422740525, 0.011208730596485698, 0.011630117885663583, 0.016061980347694634, 0.016034985422740525, 0.01593559501722767, 0.016034985422740525, 0.049067055393586, 0.016034985422740525, 0.04033041788143829] agree = 0.979 flip_asym = 0.825
+
+[E_seq] n, E_wald
+664,0.01405453
+1312,0.01018776
+1362,0.01003422
+1372,0.00997378
+
+[E_final] E_wald=0.00997378
+
+Top-100 worst injections (proposed iter EP)
+  1) Inj   1331 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | inception4b.branch3.0.conv [17, 45, 0, 0] bit 30
+  2) Inj    700 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.906 KL=2.382 | inception4b.branch3.0.conv [13, 259, 0, 0] bit 30
+  3) Inj    193 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | inception4b.branch3.0.conv [2, 122, 0, 0] bit 30
+  4) Inj    717 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | inception4b.branch3.0.conv [17, 412, 0, 0] bit 30
+  5) Inj     76 | FRcrit=0.910156 | maj=2@0.93 Δmax=0.836 KL=2.110 | inception4b.branch3.0.conv [17, 327, 0, 0] bit 30
+  6) Inj    425 | FRcrit=0.910156 | maj=2@0.99 Δmax=0.902 KL=2.360 | inception4b.branch3.0.conv [9, 350, 0, 0] bit 30
+  7) Inj    488 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | inception4b.branch3.0.conv [16, 422, 0, 0] bit 30
+  8) Inj   1208 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | inception4b.branch3.0.conv [13, 170, 0, 0] bit 30
+  9) Inj    355 | FRcrit=0.910156 | maj=2@1.00 Δmax=0.910 KL=2.410 | inception4b.branch3.0.conv [4, 137, 0, 0] bit 30
+ 10) Inj   1159 | FRcrit=0.906250 | maj=2@0.82 Δmax=0.727 KL=1.846 | inception4b.branch3.0.conv [4, 270, 0, 0] bit 30
+ 11) Inj    437 | FRcrit=0.898438 | maj=2@0.91 Δmax=0.816 KL=2.054 | inception4b.branch3.0.conv [3, 500, 0, 0] bit 30
+ 12) Inj    817 | FRcrit=0.890625 | maj=9@0.93 Δmax=0.816 KL=1.865 | inception4b.branch3.0.conv [0, 25, 0, 0] bit 30
+ 13) Inj    590 | FRcrit=0.882812 | maj=9@1.00 Δmax=0.883 KL=2.144 | inception4b.branch3.0.conv [0, 3, 0, 0] bit 30
+ 14) Inj    769 | FRcrit=0.882812 | maj=9@1.00 Δmax=0.883 KL=2.144 | inception4b.branch3.0.conv [9, 446, 0, 0] bit 30
+ 15) Inj    928 | FRcrit=0.882812 | maj=9@1.00 Δmax=0.883 KL=2.144 | inception4b.branch3.0.conv [0, 138, 0, 0] bit 30
+ 16) Inj    152 | FRcrit=0.859375 | maj=1@0.48 Δmax=0.332 KL=0.924 | inception4b.branch3.0.conv [1, 506, 0, 0] bit 30
+ 17) Inj    794 | FRcrit=0.855469 | maj=1@0.73 Δmax=0.590 KL=1.275 | inception4b.branch3.0.conv [19, 248, 0, 0] bit 30
+ 18) Inj   1220 | FRcrit=0.855469 | maj=1@1.00 Δmax=0.855 KL=1.934 | inception4b.branch3.0.conv [8, 440, 0, 0] bit 30
+ 19) Inj    873 | FRcrit=0.855469 | maj=1@1.00 Δmax=0.855 KL=1.934 | inception4b.branch3.0.conv [8, 137, 0, 0] bit 30
+ 20) Inj    161 | FRcrit=0.855469 | maj=1@1.00 Δmax=0.855 KL=1.934 | inception4b.branch3.0.conv [19, 137, 0, 0] bit 30
+ 21) Inj    248 | FRcrit=0.847656 | maj=1@0.78 Δmax=0.633 KL=1.461 | inception4b.branch3.0.conv [23, 373, 0, 0] bit 30
+ 22) Inj   1137 | FRcrit=0.843750 | maj=1@0.53 Δmax=0.387 KL=0.803 | inception4b.branch3.0.conv [8, 295, 0, 0] bit 30
+ 23) Inj    862 | FRcrit=0.015625 | maj=1@0.14 Δmax=0.004 KL=0.000 | inception4b.branch3.0.conv [22, 247, 0, 0] bit 26
+ 24) Inj      3 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [1, 151, 0, 0] bit 9
+ 25) Inj     41 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [14, 85, 0, 0] bit 2
+ 26) Inj     12 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [6, 506, 0, 0] bit 30
+ 27) Inj     68 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [14, 171, 0, 0] bit 17
+ 28) Inj     92 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [10, 74, 0, 0] bit 15
+ 29) Inj     54 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [19, 297, 0, 0] bit 10
+ 30) Inj     30 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [15, 55, 0, 0] bit 18
+ 31) Inj    147 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [7, 28, 0, 0] bit 0
+ 32) Inj    182 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [15, 171, 0, 0] bit 24
+ 33) Inj    166 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [20, 163, 0, 0] bit 26
+ 34) Inj    293 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [13, 196, 0, 0] bit 7
+ 35) Inj    135 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [3, 353, 0, 0] bit 28
+ 36) Inj    131 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [11, 223, 0, 0] bit 3
+ 37) Inj    207 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [22, 193, 0, 0] bit 22
+ 38) Inj    618 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [15, 378, 0, 0] bit 5
+ 39) Inj    389 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [12, 9, 0, 0] bit 15
+ 40) Inj    320 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [23, 111, 0, 0] bit 15
+ 41) Inj    237 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [9, 494, 0, 0] bit 23
+ 42) Inj    392 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [0, 145, 0, 0] bit 24
+ 43) Inj    489 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [14, 231, 0, 0] bit 6
+ 44) Inj    298 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [14, 128, 0, 0] bit 20
+ 45) Inj    459 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [7, 37, 0, 0] bit 26
+ 46) Inj    464 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [12, 308, 0, 0] bit 4
+ 47) Inj    516 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [21, 387, 0, 0] bit 30
+ 48) Inj    331 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [0, 38, 0, 0] bit 20
+ 49) Inj    329 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [0, 234, 0, 0] bit 4
+ 50) Inj    218 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [6, 260, 0, 0] bit 23
+ 51) Inj    345 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [3, 105, 0, 0] bit 11
+ 52) Inj    535 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [10, 152, 0, 0] bit 24
+ 53) Inj    620 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [22, 486, 0, 0] bit 13
+ 54) Inj    755 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [2, 392, 0, 0] bit 21
+ 55) Inj    419 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [1, 278, 0, 0] bit 20
+ 56) Inj    370 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [17, 444, 0, 0] bit 3
+ 57) Inj    512 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [4, 383, 0, 0] bit 13
+ 58) Inj    398 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [11, 384, 0, 0] bit 7
+ 59) Inj    756 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [14, 23, 0, 0] bit 30
+ 60) Inj    811 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [16, 77, 0, 0] bit 10
+ 61) Inj    798 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [23, 356, 0, 0] bit 13
+ 62) Inj    869 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [12, 189, 0, 0] bit 11
+ 63) Inj   1151 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [16, 23, 0, 0] bit 13
+ 64) Inj    822 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [10, 305, 0, 0] bit 11
+ 65) Inj    864 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [15, 454, 0, 0] bit 17
+ 66) Inj    877 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [16, 165, 0, 0] bit 23
+ 67) Inj   1219 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [8, 149, 0, 0] bit 9
+ 68) Inj    477 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [7, 22, 0, 0] bit 23
+ 69) Inj    872 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [6, 8, 0, 0] bit 26
+ 70) Inj    713 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [14, 362, 0, 0] bit 4
+ 71) Inj    529 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [7, 0, 0, 0] bit 12
+ 72) Inj   1068 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [3, 104, 0, 0] bit 16
+ 73) Inj   1141 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [2, 206, 0, 0] bit 29
+ 74) Inj    940 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [12, 48, 0, 0] bit 20
+ 75) Inj    525 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [21, 226, 0, 0] bit 12
+ 76) Inj   1239 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [7, 114, 0, 0] bit 11
+ 77) Inj    971 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [8, 270, 0, 0] bit 29
+ 78) Inj    557 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [0, 250, 0, 0] bit 13
+ 79) Inj    566 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [12, 118, 0, 0] bit 15
+ 80) Inj   1054 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [21, 403, 0, 0] bit 22
+ 81) Inj    692 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [0, 365, 0, 0] bit 23
+ 82) Inj    819 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [17, 145, 0, 0] bit 4
+ 83) Inj   1283 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [4, 504, 0, 0] bit 9
+ 84) Inj   1021 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [2, 231, 0, 0] bit 27
+ 85) Inj    751 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [22, 254, 0, 0] bit 19
+ 86) Inj   1045 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [1, 143, 0, 0] bit 23
+ 87) Inj   1005 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [4, 169, 0, 0] bit 16
+ 88) Inj    784 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [7, 219, 0, 0] bit 31
+ 89) Inj   1138 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [17, 326, 0, 0] bit 30
+ 90) Inj    919 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [2, 228, 0, 0] bit 15
+ 91) Inj   1224 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [5, 260, 0, 0] bit 28
+ 92) Inj    998 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [10, 455, 0, 0] bit 7
+ 93) Inj   1012 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [2, 175, 0, 0] bit 6
+ 94) Inj   1168 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [6, 315, 0, 0] bit 7
+ 95) Inj   1152 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [10, 255, 0, 0] bit 15
+ 96) Inj   1317 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [7, 364, 0, 0] bit 12
+ 97) Inj   1221 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [12, 373, 0, 0] bit 16
+ 98) Inj   1069 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [6, 329, 0, 0] bit 17
+ 99) Inj   1145 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [9, 156, 0, 0] bit 26
+100) Inj   1291 | FRcrit=0.011719 | maj=1@0.14 Δmax=0.004 KL=0.001 | inception4b.branch3.0.conv [21, 415, 0, 0] bit 29
