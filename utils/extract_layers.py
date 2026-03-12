@@ -13,8 +13,12 @@ parser.add_argument(
 )
 
 def load_state_dict(weights_path):
-    state_dict = torch.load(weights_path, map_location="cpu")
-    return state_dict
+    ckpt = torch.load(weights_path, map_location="cpu")
+
+    if isinstance(ckpt, dict) and "state_dict" in ckpt:
+        ckpt = ckpt["state_dict"]
+
+    return ckpt
 
 
 def get_layer_names(state_dict):
