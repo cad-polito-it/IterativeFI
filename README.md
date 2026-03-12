@@ -48,14 +48,14 @@ To run the **One step SFI** run the following command:
 
 ```bash
 
-python one_step_fi.py -data mnist -root ../data -net mnist_cnn -weights_path ./networks/weights/best_mnist_cnn.pt -layer_name None/conv1/... -results_path ./results -e_goal 0.01 -conf 0.99 -p 0.5 -seed 0
+python one_step_fi.py -dataset mnist -dataset_path ../data -net mnist_cnn -weights_path ./networks/weights/best_mnist_cnn.pt -layer_name None/conv1/... -results_path ./results -e_goal 0.01 -conf 0.99 -p 0.5 -seed 0
 
 ```
 
 where:
 
-- `-data`: name of the dataset to use (e.g., `mnist`)
-- `-root`: path to the dataset root directory
+- `-dataset`: name of the dataset to use (e.g., `mnist`)
+- `-dataset_path`: path to the dataset root directory
 - `-net`: network architecture to load
 - `-weights_path`: path to the pretrained model weights file
 - `-layer_name`: name of the target layer where the fault injection analysis will be applied (use `None` to apply it to the full network)
@@ -161,14 +161,14 @@ To run the **Iterative SFI** run the following command:
 
 ```bash
 
-python iterative_fi.py -data mnist -root ../data -net mnist_cnn -weights_path ./networks/weights/best_mnist_cnn.pt -layer_name None/conv1/... -results_path ./results -e_start 0.05 -e_goal 0.01 -conf 0.99 -p0 0.5 -seed 0
+python iterative_fi.py -dataset mnist -dataset_path ./data -net mnist_cnn -weights_path ./networks/weights/best_mnist_cnn.pt -layer_name None/conv1/... -results_path ./results -e_start 0.05 -e_goal 0.01 -conf 0.99 -p0 0.5 -seed 0
 
 ```
 
 where:
 
-- `-data`: name of the dataset to use (e.g., `mnist`)
-- `-root`: path to the dataset root directory
+- `-dataset`: name of the dataset to use (e.g., `mnist`)
+- `-dataset_path`: path to the dataset directory
 - `-net`: network architecture to load
 - `-weights_path`: path to the pretrained model weights file
 - `-layer_name`: name of the target layer where the fault injection analysis will be applied (use `None` to apply it to the full network)

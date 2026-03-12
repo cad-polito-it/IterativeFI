@@ -20,8 +20,8 @@ parser = argparse.ArgumentParser(description="Argparse")
 
 available_datasets = datasets.keys()
 
-parser.add_argument("-data", choices=available_datasets, required=True, help=f"{','.join(available_datasets)}")
-parser.add_argument("-root", type=str, help="root datapath", default="../../data/")
+parser.add_argument("-dataset", choices=available_datasets, required=True, help=f"{','.join(available_datasets)}")
+parser.add_argument("-dataset_path", type=str, help="dataset path", default="./data/")
 parser.add_argument("-net", type=str, help="network", default=None)
 parser.add_argument("-weights_path", help="weights_path", default="./networks/weights")
 parser.add_argument("-layer_name", type=str, help="layer for layerwise", default=None)
@@ -43,8 +43,8 @@ def main(args):
     # dataset and network loading
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     
-    dataset_name = args.data
-    data_root = args.root
+    dataset_name = args.dataset
+    data_root = args.dataset_path
     network_name = args.net
     weights_path = args.weights_path
     

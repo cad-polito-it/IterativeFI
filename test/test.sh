@@ -28,7 +28,7 @@ for i in "${!E_GOALS[@]}"; do
         [[ $resumed == false ]] && echo "RESUME from base one_step (egoal=$e_goal)" && resumed=true
         CMD+="
 echo 'RUN one_step base egoal=$e_goal'
-python one_step_fi.py -data cifar10 -root ../data -net googlenet -weights_path $WEIGHTS_PATH -results_path ./results -e_goal $e_goal -conf 0.99
+python one_step_fi.py -dataset cifar10 -dataset_path ../data -net googlenet -weights_path $WEIGHTS_PATH -results_path ./results -e_goal $e_goal -conf 0.99
 "
     fi
 
@@ -38,7 +38,7 @@ python one_step_fi.py -data cifar10 -root ../data -net googlenet -weights_path $
         [[ $resumed == false ]] && echo "RESUME from base iterative (egoal=$e_goal)" && resumed=true
         CMD+="
 echo 'RUN iterative base egoal=$e_goal'
-python iterative_fi.py -data cifar10 -root ../data -net googlenet -weights_path $WEIGHTS_PATH -results_path ./results -e_start 0.05 -e_goal $e_goal -conf 0.99
+python iterative_fi.py -dataset cifar10 -dataset_path ../data -net googlenet -weights_path $WEIGHTS_PATH -results_path ./results -e_start 0.05 -e_goal $e_goal -conf 0.99
 "
     fi
 
@@ -63,14 +63,14 @@ echo 'Processing layer $layer'
         if [[ ! -f "$one_file" ]]; then
             CMD+="
 echo 'RUN one_step layer $layer'
-python one_step_fi.py -data cifar10 -root ../data -net googlenet -weights_path $WEIGHTS_PATH -results_path ./results -e_goal $e_goal -conf 0.99 -layer_name $layer
+python one_step_fi.py -dataset cifar10 -dataset_path ../data -net googlenet -weights_path $WEIGHTS_PATH -results_path ./results -e_goal $e_goal -conf 0.99 -layer_name $layer
 "
         fi
 
         if [[ ! -f "$iter_file" ]]; then
             CMD+="
 echo 'RUN iterative layer $layer'
-python iterative_fi.py -data cifar10 -root ../data -net googlenet -weights_path $WEIGHTS_PATH -results_path ./results -e_start 0.05 -e_goal $e_goal -conf 0.99 -layer_name $layer
+python iterative_fi.py -dataset cifar10 -dataset_path ../data -net googlenet -weights_path $WEIGHTS_PATH -results_path ./results -e_start 0.05 -e_goal $e_goal -conf 0.99 -layer_name $layer
 "
         fi
 
