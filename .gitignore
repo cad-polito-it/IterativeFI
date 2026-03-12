@@ -206,8 +206,11 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# 
+# Results and tests
 /test/net_name.sh
 /test/test_parallel.sh
 /test/test_to_remove.sh
 /test/test_to_remove_bis.sh
+/results/
+/results_parallel/
+/one_step_fi_parallel.py
